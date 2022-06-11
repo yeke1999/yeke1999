@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    //声明
+    var num;
+    function r(num) {
+        //获取当前数字的个、十、百位上的数字
+        var ge = num % 10; var shi = parseInt(num / 10) % 10, bai = parseInt(num / 100);
+        //获取当前数字的个、十、百位的立方和
+        var result = Math.pow(ge, 3) + Math.pow(shi, 3) + Math.pow(bai, 3);
+        //判断是否为水仙花数
+        if (num == result) {
+            return true;
+        }
+        else {
+            return false;
+        }
+
+    }
+   var a= r(153);
+
+   console.log(a);
+</script>
+<script>
+    //声明
+    function isWANMEI(num){
+        var sum;
+        //找到这个数的所有约数并求和
+        for(i=1;i<num;i++){
+            if(num%i==0){
+                sum+=i;
+            }
+        }
+        if(sum==num){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+  var a=  isWANMEI(65);
+  console.log(a);
+  for(var k=1;k<1000;k++){
+      if(isWANMEI(k)){
+          console.log(k+"是完美数字");
+      }
+    }
+</script>
+<script>
+      function fun(){
+  	//书写你封装功能性代码
+  	console.log("我是一枚大帅哥");
+  	console.log("虽然不是真的");
+  } 
+  //调用部分
+  fun();
+  fun();
+  fun();
+</script>
+<script>
+    function bi(a,b){
+        console.log(a);
+        console.log(b);
+    }
+bi(1,2);
+bi(3,4);
+</script>
+<script>
+    function add(){
+        console.log("大大大");
+        add
+    }
+    
+</script>
+<script>
+    (function(a){
+        a+=9;
+        console.log(a);
+    })(56);
+    
+</script>
