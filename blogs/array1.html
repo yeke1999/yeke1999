@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function rev(arr,n){
+        for(i=0;i<n;i++){        //循环删除数组尾部的元素并添加到数组头部
+            var result=arr.pop();//保存从数组尾部删除的元素
+            arr.unshift(result);//把保存的元素添加到数组的头部
+        }
+        return arr;
+    }
+    var a=rev([1,2,3,4,5],3);
+    console.log(a);
+</script>
+</html>

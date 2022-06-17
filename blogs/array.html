@@ -23,5 +23,31 @@
     arr.pop();
     arr.pop();
     console.log(arr);
-    
+    arr.unshift(23,"qwd","师生");
+    console.log(arr);
+    arr.shift();
+    arr.shift();
+    arr.shift();
+    console.log(arr);
+    var str=arr.join(',');
+    var str1=arr.join("*");
+    console.log(str);
+    console.log(str1);
+    arr.reverse();
+    console.log(arr);
+    var a=arr.slice(2,5);
+    console.log(a);
+    var arr2 = [55,33,21,88,57,48,29];
+     //splice:可以对于当前数组进行切割、插入、替换元素操
+     //插入：代表从索引值为2的地方切割出零个元素，插入进一个元素么么哒
+     var newArr = arr2.splice(2,0,"么么哒");
+     console.log(arr);
+     //替换:代表从起始数组索引值2切割出两个元素，使用马老师、贾老师进行替换。
+     var newArr = arr2.splice(2,2,"马老师",'贾老师');
+     console.log(newArr);
+     console.log(arr2);
+</script>
+<script>
+    arr[1,2,4,5,6];
+    console(arr.length());
 </script>
